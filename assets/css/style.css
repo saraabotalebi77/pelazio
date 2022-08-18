@@ -1,0 +1,5 @@
+@import "./allElementsStyle.css";
+@import "./headerCss/headerStyle.css";
+@import "./mainCss/mainStyle.css";
+@import "./footerCss/footer.css";
+@import "./responsiveCss/responsive.css";

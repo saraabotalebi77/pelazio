@@ -1,0 +1,12 @@
+@font-face{
+    font-family : iranYekan;
+    src : url("../font/IRANYekanWeb.ttf")format("truetype");
+}
+*{
+    direction : rtl;
+    font-family : iranYekan , sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing : border-box;
+}
+

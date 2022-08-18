@@ -1,0 +1,416 @@
+/* main*/
+.main{
+    margin-top : 100px;
+    display : flex;
+    flex-direction: column;
+    align-items : center;
+}
+/* menu */
+.menu-box{
+    width : 100%;
+    display : flex;
+    justify-content: flex-start;
+}
+.menu{
+    list-style-type : none;
+    display : flex;
+    align-items : center;
+    padding-right : 5%;
+}
+.menu_items{
+    height : 45px;
+    margin-left : 25px;
+
+}
+.menu_items:first-child{
+    border-radius : 10px;
+    background-image: linear-gradient(to left ,#C1111D ,#C1111D ,#661C51 );
+}
+.menu_items:first-child .menu_link{
+    width : 155px;
+    display : flex;
+    justify-content : space-around;
+    color : white;
+    padding : 0 15px;
+}
+.menu_items:last-child .menu_link{
+    padding : 0 20px;
+}
+.menu_link{
+    height : 100%;
+    text-decoration : none;
+    display: flex;
+    align-items : center;
+    color : black;
+    font-size : 13px;
+}
+.menu_icon{
+    font-size : 16px;
+    color : white;
+}
+/* container-one*/
+.container-one{
+    width : 90%;
+    height: 310px;
+    border-radius : 20px;
+    display : flex;
+    justify-content : space-between;
+    margin-bottom : 40px;
+    margin-top : 20px;
+
+}
+.box-one{
+    width : 65%;
+    height: 100%;
+    position : relative;
+}
+.box-two{
+    width : 33%;
+    height: 100%;
+}
+.box-img{
+    width: 100%;
+    height: 100%;
+    border-radius : 20px;
+}
+.image-one , .image-two{
+    position : absolute;
+    top :0;
+    right : 0;
+    left :0;
+}
+.image-two{
+    animation : move-image 5s linear  infinite alternate;  
+}
+@keyframes move-image{
+    10%{opacity:1}
+    20%{opacity:1}
+    30%{opacity:1}
+    40%{opacity:1}
+    50%{opacity:1}
+    60%{opacity:0}
+    70%{opacity:0}
+    80%{opacity:0}
+    90%{opacity:0}
+    100%{opacity:0}
+}
+/******** Style all product boxes********/
+.container-products{
+    width : 93%;
+    height: 410px;
+    border-radius: 20px;
+    display : flex;
+    justify-content : space-around;
+    align-items : center;
+}
+.title-products{
+    height : 240px;
+    width : 20%;
+    display : flex;
+    flex-direction : column;
+    justify-content : space-between;
+    align-items : flex-start;
+}
+.title-image{
+    width: 130px;
+    height: 130px;
+}
+.title-txt{
+    font-weight : 400;
+    font-size: 16px;
+    margin-top : 10px;
+}
+.link-all-products{
+    width : 140px;
+    align-self : flex-end;
+    margin-top : auto;
+    text-decoration: none;
+    border-radius : 60px; 
+    color : white;
+    padding : 10px 3px;
+    display : flex;
+    justify-content: space-around ;
+    align-items : center;
+}
+.icon-all-products{
+    width : 18px;
+    height : 18px;
+    border-radius : 50%;
+    background-color : white;
+    color : #000;
+    display : flex;
+    justify-content: center;
+    align-items : center;
+}
+
+/* product*/
+.product{
+    width: 18%;
+    height: 350px;
+    position : relative;
+    padding : 10px 3px;
+    border : 1px solid #ECEDEF;
+    border-radius : 20px;
+    background: white;
+    cursor : pointer;
+    display : flex;
+    flex-direction : column;
+    justify-content : space-between;
+    align-items : center;
+} 
+
+/* box-image-product */
+.box-image-product{
+    position : relative;
+    width : 94%;
+    height: 190px;
+}
+.image-product{
+    position : absolute;
+    width : 100%;
+    height : 100%;
+}
+.icon-hover{
+    display : none;
+    position : absolute;
+    z-index: 2;
+    top : 50%;
+    left : 50%;
+    transform: translate(-50%,-50%);
+    color : white;
+    font-size : 35px;
+}
+.box-hover{
+    position : absolute;
+    width : 100%;
+    height: 100%;
+    border-radius : 10px;
+    
+}
+.product:hover .box-hover{
+    background-color :rgba(126, 126, 126, 0.774);
+    transition : background-color 0.5s ease-out;
+}
+.product:hover .icon-hover{
+    display : block;
+}
+
+/* box-name-product*/
+.box-name-product{
+    width : 94%;
+}
+.name-product{
+    height : 4.3em;
+    font-size: 14px;
+    font-weight : 600;
+    padding : 10px 12px;
+    line-height: 1.69;
+    overflow : hidden;
+    display : -webkit-box;
+    display : -moz-box;
+    -moz-line-clamp : 2;
+    -webkit-line-clamp : 2;
+    -moz-box-orient : vertical;
+    -webkit-box-orient : vertical;
+} 
+.link-name-product{
+    text-decoration : none;
+    color: #000;
+
+}
+
+/* box-price-product*/
+.box-price-product{
+    display : flex;
+    justify-content: space-between;
+    width : 94%;
+    margin-top : auto;
+
+}
+.box-discount{
+    width:50px;
+    height: 50px;
+    background-image : url(https://webintheme.ir/wp/pelazio/wp-content/themes/pelazio/assets/img/discount.ee34bf7e.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display : flex;
+    justify-content: center;
+    align-items : center;
+    color : white;
+}
+.price{
+    font-size : 15px;
+}
+.box-price{
+    margin-right : auto;
+}
+.main-price{
+    font-size : 14px;
+    color : #A0A3AD;
+}
+.discounted-price{
+    color :#1A879F;
+    font-size : 17px;
+}
+
+/******** Style all product boxes********/
+
+/* discounted-products*/
+.discounted-products{
+    background-color: #F7F7F7;
+}
+.link-all-discounted-products
+{
+    background-color: #07142C;
+}
+
+
+/* fast-sending-products */
+.fast-sending-products {
+    margin-top : 25px;
+    background-color : #1D247A;
+}
+.link-all-fast-sending-products{
+    background-color : #C1111D;
+}
+.icon-all-fast-sending-products{
+    color : #C1111D;
+}
+/* container-two & container-three & container-four */
+.container-two , .container-three , .container-four{
+    width: 90%;
+    min-height : 175px;
+    margin-top : 35px;
+    display : flex;
+    flex-wrap : wrap;
+    justify-content: space-between;
+}
+.image-box-container-two , .image-box-container-three , .image-box-container-four{
+    border-radius : 20px;
+    width : 31.7%;
+    height : 100%;
+}
+.container-two-image , .container-three-image ,.container-four-image{
+    border-radius : 20px;
+    width : 100%;
+    height : 100%;
+}
+/* best-selling-products & Latest-products*/
+.best-selling-products ,.Latest-products{
+    background-color: #F7F7F7;
+    margin-top : 25px;
+}
+.link-all-best-selling-products , .link-all-Latest-products{
+    background-color: #07142C;
+}
+/* container-three & container-four*/
+.container-three .container-four{
+    height : 215px !important;
+}
+.image-box-container-three , .image-box-container-four{
+    width : 23% !important;
+}
+/* our-website-products */
+.our-website-products{
+    margin-top : 25px;
+    background-image : linear-gradient(to left,#C02832,#1A879F)
+}
+.link-all-our-website-products{
+    background-color: #07142C;
+}
+/* container-five */
+.container-five{
+    width: 90%;
+    height : 150px;
+    line-height : 1em;
+    margin-top : 25px;
+    display : flex;
+    flex-direction : column;
+    justify-content: center;
+    align-items : center;
+}
+.icon-box{
+    height : 50px; 
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items : center;
+}
+.line{
+    border-bottom: 1px solid #000;
+    width : 7.5%;
+}
+.fa-landmark{
+    transform: translateY(-50%);
+    font-size: 23px;
+    padding: 5px;
+    background-color : white;
+ 
+}
+.brand{
+    font-size : 23px;
+}
+/* container-six */
+.container-six{
+    width : 90%;
+    height: 100px;
+    overflow : hidden;
+}
+.rotate-box{
+    width : 100%;
+    height: 100%;
+    display : flex;
+    justify-content: space-between;
+}
+
+.box-image-container-six{
+    width : 170px;
+    height : 100%;
+}
+.container-six-image{
+    width: 100%;
+    height: 100%;
+}
+/* container-seven*/
+.container-seven{
+    width: 93%;
+    margin-top : 25px;
+    margin-bottom : 25px;
+    display : flex;
+    flex-direction : column;
+}
+.title-website{
+    margin-right : 1.5%; 
+    margin-bottom : 10px;
+    padding : 10px 5px;
+    height : 60px;
+    display : flex;
+    align-items : center;
+}
+.name-website{
+    font-size : 17px;
+    margin-left : 10px;
+}
+.logo-website{
+    width: 130px;
+    height: 50px;
+    margin-left : 10px;
+}
+.feature-website{
+    font-size: 15px;
+    margin-right : 10px;
+    color : #212529;
+}
+/* container-description-website */
+.description-website{
+    width : 80.5%;
+    font-size : 15px;
+    font-weight : 300;
+    line-height : 1.90em;
+    color : #212529;
+    overflow : hidden;
+    display : -webkit-box;
+    -webkit-line-clamp : 5;
+    -webkit-box-orient : vertical;
+}
